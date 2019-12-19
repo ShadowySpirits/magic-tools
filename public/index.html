@@ -1,0 +1,52 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html" lang="zh">
+
+<head>
+    <title>西电课程表 XLS 转 CSV</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.loli.net/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="static/css/bootstrap-material-datetimepicker.min.css" />
+</head>
+
+<body class="landing">
+
+    <div id="page-wrapper">
+        <section id="banner">
+            <div class="inner">
+                <h2>西电课程表 XLS 转 CSV</h2>
+                <form action="xls2csv" method="post" enctype="multipart/form-data"
+                    style="width:400px;margin:auto;color:#495057"><br><br>
+                    <input type="file" name="file" class="filestyle" data-btnClass="btn-primary" data-text="上传课程表"
+                        required /><br>
+                    <p style="color:#fff;float:left;margin-left:10px;margin-bottom:5px;">第一周星期一的日期：</p>
+                    <input id="date" name="date" class="form-control" style="background-color:#e9ecef;opacity:1;"
+                        required /><br>
+                    <input class="button special" type="submit" value="转换" /><br><br>
+                </form>
+            </div>
+            <footer id="footer">
+                <ul class="copyright">
+                    <li>&copy; Magic Tools</li>
+                    <li>Design by ShadowySpirits</li>
+                </ul>
+            </footer>
+        </section>
+
+
+    </div>
+
+    <script src="static/js/main.js"></script>
+    <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.loli.net/ajax/libs/bootstrap-filestyle/2.1.0/bootstrap-filestyle.min.js"></script>
+    <script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script
+        src="https://cdnjs.loli.net/ajax/libs/bootstrap-material-datetimepicker/2.7.1/js/bootstrap-material-datetimepicker.min.js"></script>
+    <script>
+        $('#date').bootstrapMaterialDatePicker({ time: false });
+    </script>
+</body>
+
+</html>
