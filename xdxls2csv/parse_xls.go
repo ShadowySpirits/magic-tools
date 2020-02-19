@@ -63,7 +63,7 @@ func parseXls(file *xls.WorkBook, startDate time.Time, out io.Writer) {
 				weekStart := atoi(matches[0]) - 1
 				var maxWeek int
 				if len(matches) == 1 {
-					maxWeek = weekStart
+					maxWeek = atoi(matches[0])
 				} else {
 					maxWeek = atoi(matches[1])
 				}
